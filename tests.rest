@@ -1,0 +1,29 @@
+get http://localhost:5000
+
+###
+
+get http://localhost:5000/users
+###
+
+get http://localhost:5000/users/f4eb427b-ab04-42b3-816c-83f8bb6812f4
+
+###
+post http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "firstName": "Isrra",
+    "lastName": "Brambila",
+    "age": 25
+}
+
+###
+delete http://localhost:5000/users/ba707f81-bc85-4e11-b5b4-fd5484b67d72
+
+###
+patch http://localhost:5000/users/92a9ff94-4583-4603-8026-7215ac20d433
+Content-Type: application/json
+
+{
+    "firstName":"Lizeth"
+}
